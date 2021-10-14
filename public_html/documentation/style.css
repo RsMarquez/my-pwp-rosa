@@ -1,0 +1,20 @@
+header{
+    text-align: center;
+    color: darkred;
+    font-weight: bolder;
+}
+section{
+    font-weight: bold;
+
+}
+article{
+    color: darkred;
+}
+img{
+    display: flex;
+    float: bottom;
+    width: 200px;
+    height: 200px;
+    margin: 1.65em;
+    margin-top: 3.3px;
+}
