@@ -10,11 +10,19 @@ section{
 article{
     color: darkred;
 }
-img{
+.logo{
     display: flex;
     float: bottom;
     width: 200px;
     height: 200px;
+    margin: 1.65em;
+    margin-top: 3.3px;
+}
+img{
+    display: flex;
+    float: bottom;
+    max-width:100% ;
+    height: auto;
     margin: 1.65em;
     margin-top: 3.3px;
 }
