@@ -1,0 +1,23 @@
+.center{
+    display: flex;
+    float: bottom;
+    width: 200px;
+    height: 200px;
+    margin: 1.65em;
+    margin-top: 3.3px;
+}
+.apple {
+    background-color: black;
+    font-family: Arial, sans-serif;
+
+}
+.h1 {
+    font-weight: bolder;
+    text-align: center;
+}
+.about {
+    padding-top: 25px ;
+}
+.card{
+
+}
