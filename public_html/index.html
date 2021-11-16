@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="documentation/styling.css" rel="stylesheet">
+    <title>Meet The Ball ABQ </title>
+
+
+</head>
+<body class="apple">
+<div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <div class="container-fluid">
+            <img src="documentation/images/blackLogo.jpg" alt="Black Logo" height="75px" width="70px">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll " style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<!--About Issac-->
+<div class="about text-md-center">
+    <section>
+        <div class="card mb-3 text-white bg-black" style="max-width: content-box;" id="home">
+            <div class="row p-xl-2">
+                <div class="col-md-6">
+                    <img src="documentation/images/issac-foodtruck.jpg" class="card-img" alt="Isaac and the food truck">
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">About Meet the Ball ABQ</h5>
+                        <p class="card-text">Meet the ball is offering up innovative takes on comfort asian style street
+                            food. You'll find all your favorites amped up with new flavors. This Albuquerque-based
+                            business is going for gold with homey, soul-warming fare.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<!--Menu with carousel-->
+<h2 class="d-flex justify-content-center text-decoration-underline text-danger" id="menu">Menu</h2>
+<div id="carouselExampleCaptions" class="carousel slide mb-4" data-bs-ride="carousel ">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="documentation/images/takoyaki2.JPG" class="rounded mx-auto d-block  w-25 p-3"
+                 alt="Photo of takoyaki"/>
+            <div class="carousel-caption d-none d-md-block bg-warning mb-6 text-black">
+                <h5>Takoyaki</h5>
+                <p>Ball-shaped Japanese snack made of a wheat flour-based batter and
+                    cooked in a special molded pan. It is typically filled with minced or diced octopus, tempura scraps,
+                    pickled ginger, and green onion</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="documentation/images/Okonamayaki.jpeg" class="rounded mx-auto d-block  w-25 p-3"
+                 alt="Photo of Okonamayaki"/>
+            <div class="carousel-caption d-none d-md-block bg-warning mb-6 text-black">
+                <h5>Okonamayaki</h5>
+                <p>A savory pancake dish consisting of wheat flour batter and other ingredients cooked on a teppan.
+                    Common additions include cabbage, meat, and seafood, and toppings include okonomiyaki sauce,
+                    aonori, katsuobushi, Japanese mayonnaise, and pickled ginger</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="documentation/images/ramenBurger.jpg" class="rounded mx-auto d-block  w-25 p-3"
+                 alt="Photo of Ramen Burger"/>
+            <div class="carousel-caption d-none d-md-block bg-warning mb-6 text-black">
+                <h5>Ramen Burger</h5>
+                <p>A Ramen burger is a beef patty sandwiched between two pan-fried discs of ramen noodles, then topped
+                    with an arugula, green onions, and a “secret” Shoyu sauce.</p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<!--Contact us form-->
+<div class="card border-warning mb-4 bg-black container mt-4 ">
+    <form id="contact" action="./apis/" method="post" novalidate>
+        <div class="form-group" class="card border-light mb-3" style="max-width: 80rem;">
+            <label for="name" class="text-white">Name</label>
+            <div class="input-group">
+                <input class="form-control" id="name" name="name" placeholder="Your Name" type="text">
+            </div>
+        </div>
+        <div class="form-group" class="card border-light mb-3" style="max-width: 80rem;">
+            <label for="email" class="text-white">Email</label>
+            <div class="input-group">
+                <input class="form-control" id="email" name="email" placeholder="Your Email" type="email">
+            </div>
+        </div>
+        <div class="form-group" class="card border-light mb-3" style="max-width: 80rem;">
+            <label for="subject" class="text-white">Subject</label>
+            <div class="input-group">
+                <input class="form-control" id="subject" name="subject" placeholder="Subject" type="text">
+            </div>
+        </div>
+        <div class="form-group" class="card border-light mb-3" style="max-width: 80rem;">
+            <label for="message" class="text-white">Message</label>
+            <div class="input-group">
+                <textarea class="form-control" id="message" maxlength="2000" name="message"
+                          placeholder="Your Message (2000 characters max)" required
+                          rows="5"></textarea>
+            </div>
+        </div>
+        <!-- Make sure to add site key provided by google recaptcha -->
+        <div class="mx-auto" style="width: 300px;">
+            <div class="g-recaptcha" data-sitekey="6LdQfhcdAAAAAG69W8QGPdJZCOOepUsPQ7e_1tDd"></div>
+        </div>
+        <div class="mx-auto" style="width: 300px;">
+            <button class="btn btn-info btn-light " type="submit">Submit</button>
+            <button class="btn btn-default btn-light" type="reset">Reset</button>
+        </div>
+    </form>
+</div>
+<!--end contact form -->
+<div id="output-area"></div>
+<!-- script-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"
+        integrity="sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/additional-methods.min.js"
+        integrity="sha512-XZEy8UQ9rngkxQVugAdOuBRDmJ5N4vCuNXCh8KlniZgDKTvf7zl75QBtaVG1lEhMFe2a2DuA22nZYY+qsI2/xA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!--Google reCAPTCHA-->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<!--custom jquery script-->
+<script src="documentation/script.js"></script>
+<!--Bootstrap script-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+<!-- Make sure to use Jquery min and not the slim version provided by Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script crossorigin="anonymous" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
