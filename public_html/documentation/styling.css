@@ -22,10 +22,6 @@
     padding-top: 25px;
 }
 
-.card {
-
-}
-
 container {
     display: flex;
     justify-content: center;
@@ -43,4 +39,16 @@ container {
     position: relative;
     left: 0;
     top: 0;
+}
+.fit-logo{
+    height:75px;
+    width:70px;
+}
+.card-title{
+    font: italic small-caps bold 60px/2 cursive;
+    font-weight: bold;
+    font-size: larger;
+}
+.card-text{
+    font-family: "Lucida Console", Courier, monospace;
 }
